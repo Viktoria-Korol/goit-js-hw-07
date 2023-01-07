@@ -24,15 +24,7 @@ galleryEl.addEventListener("click", onImgClick);
 
 function onImgClick(event) {
     event.preventDefault();
-    if (event.target.nodeName !== "IMG") {
-        return;
-    }
-    
-    // Додаю розмітку модального вікна в код HTML
-    const instance = basicLightbox.create(
-        `<img width = "1400" height = "900" src = "${event.target.dataset.source}">`
-    );
-    instance.show();
+
 }
 
 // Додаю відображення підписів до зображень: з атрибута alt + з інтервалом 250 мілісекунд.
